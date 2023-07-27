@@ -4,7 +4,19 @@ This repo shows how to consume HCP Vault Secrets from Terraform Cloud.
 
 It follows the instructions on [HCP Vault Secrets quick start](https://developer.hashicorp.com/vault/tutorials/hcp-vault-secrets-get-started/hcp-vault-secrets-terraform) tutorials.
 
-## Configuration information
+## Usage
+
+1. Update your backend's information (`organization` and `workspace name`) in `main.tf`
+2. Create a TFC variable set for your HCP credentials (`HCP_CLIENT_ID` and `HCP_CLIENT_SECRET`) and assign it to your workspace
+3. Apply your configuration
+
+```shell
+> terraform init
+> terraform plan
+> terraform apply
+```
+
+## Terraform Configuration information
 
 <!-- BEGIN_TF_DOCS -->
 
